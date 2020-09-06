@@ -1,10 +1,12 @@
 # Treemap Visualizer
  
+ 
 This repo contains an interactive GUI that visualizes hierarchical data on your operating system (computer files and folders) using the treemap algorithm.
 
 A treemap is a visualization technique that shows a tree's structure according to the sizes of its data values. It uses rectangles to show subtrees, scaled to reflect the proportional sizes of each piece of data. The use of tree data structures helps model the hierarchical categorization of a base set of data, where the leaves represent the data values themselves, and internal nodes represent groupings of this data.
 
 In the example I have used, the treemap tool allows you to visualize two different kinds of data: the files and folders in your computer, and a categorization of Computer Science Education research papers. The colours of the rectangles are randomly-generated independently for each node.
+
 
 Basic Features: 
 
@@ -16,6 +18,7 @@ Basic Features:
         - The selected leaf's data_size
    - Clicking on the same rectangle again unselects it
    - User can close the window and quit the program by clicking the 'X' icon
+   
    
 Additional Features:
 
