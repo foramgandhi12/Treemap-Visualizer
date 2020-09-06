@@ -29,4 +29,5 @@ Additional Features:
    - If the user selects a rectangle, and then presses 'a', the tree corresponding to that rectangle, as well as all of its subtrees, are expanded in the displayed-tree
    - If the user selects any rectangle, and then presses 'x', the entire displayed-tree is collapsed down to just a single tree node
    
+   
 ## *Launch using the visualizer.py file.
