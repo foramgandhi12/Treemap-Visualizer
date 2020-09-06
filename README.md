@@ -8,6 +8,8 @@ A treemap is a visualization technique that shows a tree's structure according t
 In the example I have used, the treemap tool allows you to visualize two different kinds of data: the files and folders in your computer, and a categorization of Computer Science Education research papers. The colours of the rectangles are randomly-generated independently for each node.
 
 
+![](Render.jpg)
+
 Basic Features: 
 
    - User can expand or collapse folders in the visualizer 
