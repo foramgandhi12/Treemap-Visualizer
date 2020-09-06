@@ -23,8 +23,10 @@ Basic Features:
 Additional Features:
 
    - User can MUTATE the data tree, without it changing the original data, by pressing the 'Up Arrow' or 'Down Arrow' key on a selected rectangle (±1%)
-   - If the user selects a rectangle that is a leaf in the whole tree, then hovers the cursor over another rectangle that is an internal node in the whole tree and presses 'm',        the selected leaf should be moved to be a subtree of the internal node being hovered over
+   - If the user selects a rectangle that is a leaf in the whole tree, then hovers the cursor over another rectangle that is an internal node in the whole tree and presses 'm',      the selected leaf should be moved to be a subtree of the internal node being hovered over
    - If the user selects a rectangle, and then presses 'e', the tree corresponding to that rectangle is expanded in the displayed-tree
-   - If the user selects a rectangle, and then presses 'c', the parent of that tree is unexpanded (or "collapsed") in the displayed-tree. (Note that since rectangles correspond to      leaves in the displayed-tree, it is the parent that needs to be unexpanded.)
+   - If the user selects a rectangle, and then presses 'c', the parent of that tree is unexpanded (or "collapsed") in the displayed-tree. (Note that since rectangles correspond      to leaves in the displayed-tree, it is the parent that needs to be unexpanded.)
    - If the user selects a rectangle, and then presses 'a', the tree corresponding to that rectangle, as well as all of its subtrees, are expanded in the displayed-tree
    - If the user selects any rectangle, and then presses 'x', the entire displayed-tree is collapsed down to just a single tree node
+   
+# Launch using the visualizer.py file.
