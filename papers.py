@@ -74,12 +74,12 @@ class PaperTree(TMTree):
         super(PaperTree, self).__init__(name, subtrees, citations)
 
     def get_separator(self) -> str:
-        """Return the file separator for this OS.
+        """Returns the file separator for this OS.
         """
         return '/'
 
     def get_suffix(self) -> str:
-        """Return the final descriptor of this tree.
+        """Returns the final descriptor of this tree.
         """
         if len(self._subtrees) == 0:
             return ' (paper)'
@@ -88,10 +88,10 @@ class PaperTree(TMTree):
 
 
 def _load_papers_to_dict(by_year: bool = True) -> Dict:
-    """Return a nested dictionary of the data read from the papers dataset file.
+    """Returns a nested dictionary of the data read from the papers dataset file.
 
-    If <by_year>, then use years as the roots of the subtrees of the root of
-    the whole tree. Otherwise, ignore years and use categories only.
+    If <by_year>, then uses years as the roots of the subtrees of the root of
+    the whole tree. Otherwise, ignores years and uses categories only.
     """
       
     cat_dict = {}
@@ -99,7 +99,7 @@ def _load_papers_to_dict(by_year: bool = True) -> Dict:
     with open(DATA_FILE) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
-        # skip first row of column names
+        # skips first row of column names
         next(csv_reader)
 
         for row in csv_reader:
@@ -124,11 +124,11 @@ def _load_papers_to_dict(by_year: bool = True) -> Dict:
 
 
 def _build_tree_from_dict(nested_dict: Dict) -> List[PaperTree]:
-    """Return a list of trees from the nested dictionary <nested_dict>."""
+    """Returns a list of trees from the nested dictionary <nested_dict>."""
 
     subtrees = []
     for key in nested_dict:
-        # create leaf nodes for papers
+        # creates leaf nodes for papers
         if key == '':
             papers = nested_dict['']
 
@@ -137,7 +137,7 @@ def _build_tree_from_dict(nested_dict: Dict) -> List[PaperTree]:
                 subtrees.append(
                     PaperTree(paper[1], [], paper[0], paper[2], paper[3])
                 )
-        # create internal node for category
+        # creates internal node for category
         else:
             trees = _build_tree_from_dict(nested_dict[key])
             subtrees.append(PaperTree(key, trees))
