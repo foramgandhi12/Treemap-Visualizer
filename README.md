@@ -30,4 +30,4 @@ Additional Features:
    - If the user selects any rectangle, and then presses 'x', the entire displayed-tree is collapsed down to just a single tree node
    
    
-## *Launch using the visualizer.py file.
+### *Launch using the visualizer.py file.
