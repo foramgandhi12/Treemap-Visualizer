@@ -11,7 +11,7 @@ In the example I have used, the treemap tool allows you to visualize two differe
 ![](Render.JPG)
 
 
-Basic Features: 
+# Basic Features: 
 
    - User can expand or collapse folders in the visualizer 
    - User can navigate back up a level to see files collapsed back into a single folder
@@ -23,7 +23,7 @@ Basic Features:
    - User can close the window and quit the program by clicking the 'X' icon
    
    
-Additional Features:
+# Additional Features:
 
    - User can MUTATE the data tree, without it changing the original data, by pressing the 'Up Arrow' or 'Down Arrow' key on a selected rectangle (±1%)
    - If the user selects a rectangle that is a leaf in the whole tree, then hovers the cursor over another rectangle that is an internal node in the whole tree and presses 'm',      the selected leaf should be moved to be a subtree of the internal node being hovered over
